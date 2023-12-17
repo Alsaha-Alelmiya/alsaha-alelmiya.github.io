@@ -3,6 +3,7 @@
 header{
 background-color:var(--fg-color);
 background-image: var(--dark-header-bg);
+background-size: 100vw;
 }
 
 h1.index{
@@ -21,13 +22,13 @@ padding-left: 30px;
 width: 50%;
 }
 
-.h-logo:nth-child(2){
+#alsaha-alelmiya{
 position:relative;
-top:-8.5px;
+top:-1px;
 width:100px;
 }
 
-.h-logo:nth-child(1){
+#mg-dictionary{
 position:relative;
 top:19px;
 width:60px;
@@ -70,8 +71,8 @@ display: grid;
 .btns-div-title{
 background-color:var(--dark-bg-color);
 background-color: #2d7188;
-background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23f3eced' fill-opacity='0.14' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-background-size:2vw;
+background-image: var(--btns-div-title-bg);
+background-size:;
 width:70%;
 padding:10px 0px;
 color:var(--fg-color);
@@ -132,6 +133,7 @@ height:180px;
 footer{
 background-color:var(--fg-color);
 background-image: var(--dark-footer-bg);
+background-size: 100vw;
 }
 
 .footer-list, .footer-list li, .footer-list a{

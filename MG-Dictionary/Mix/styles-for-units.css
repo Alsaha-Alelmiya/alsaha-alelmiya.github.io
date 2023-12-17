@@ -3,6 +3,7 @@
 header{
 background-color:var(--fg-color);
 background-image: var(--header-bg);
+background-size: 100vw;
 }
 
 h1.index{
@@ -20,13 +21,13 @@ text-shadow:var(--text-shadow-fbg);
 font-weight: normal;
 }
 
-.h-logo:nth-child(2){
+#alsaha-alelmiya{
 position:relative;
-top:-8.5px;
+top:-1px;
 width:100px;
 }
 
-.h-logo:nth-child(1){
+#mg-dictionary{
 position:relative;
 top:19px;
 width:60px;
@@ -249,11 +250,6 @@ border-collapse:collapse;
 padding:10px;
 }
 
-img, br{
-pointer-events:none;
-user-select:none;
-}
-
 .icons{
 font-family:icons;
 }
@@ -314,4 +310,5 @@ text-decoration-thickness:0.7px;
 footer{
 background-color:var(--bg-color);
 background-image: var(--footer-bg);
+background-size: 100vw;
 }
