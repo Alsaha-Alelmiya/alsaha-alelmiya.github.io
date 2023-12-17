@@ -4,25 +4,19 @@ for(i = 0; i < content.length; i++){
 content[i].style.visibility ="hidden";
 }
 
-document.addEventListener("DOMContentLoaded", function(){
-setTimeout(function() {
-loaderBox.style.opacity="0";
-loaderBox.style.display = "none";
-for(i = 0; i < content.length; i++){
-content[i].style.visibility ="visible";
-content[i].style.animation ="fade-in 1s ease-in-out";
-}
-}, 5500);
+document.addEventListener("DOMContentLoaded", function() {
+  for (i = 0; i < content.length; i++) {
+    content[i].style.visibility = "hidden";
+  }
 });
 
-window.addEventListener("load", function(){
-setTimeout(function() {
-loaderBox.style.opacity="0";
-loaderBox.style.display = "none";
-for(i = 0; i < content.length; i++){
-content[i].style.animation ="fade-in 0.5s ease-in-out";
-}
-}, 5500);
+window.addEventListener("load", function() {
+  loaderBox.style.opacity = "0";
+  loaderBox.style.display = "none";
+  for (i = 0; i < content.length; i++) {
+    content[i].style.visibility = "visible";
+    content[i].style.animation = "fade-in 1s ease-in-out";
+  }
 });
 
 function openMenu(){
