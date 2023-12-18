@@ -72,7 +72,7 @@ display: grid;
 background-color:var(--dark-bg-color);
 background-color: #2d7188;
 background-image: var(--btns-div-title-bg);
-background-size:;
+background-size:90vw;
 width:70%;
 padding:10px 0px;
 color:var(--fg-color);
