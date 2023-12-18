@@ -395,11 +395,28 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 window.addEventListener("load", function() {
-  loaderBox.style.opacity = "0";
-  loaderBox.style.display = "none";
-  for (i = 0; i < content.length; i++) {
-    content[i].style.visibility = "visible";
-    content[i].style.animation = "fade-in 1s ease-in-out";
+  var loadTime = window.performance.timing.domContentLoadedEventEnd - window.performance.timing.navigationStart;
+
+  if (loadTime < 1250) {
+    window.setTimeout(function() {
+      var loaderBox = document.getElementById("loaderBox");
+      loaderBox.style.opacity = "0";
+      loaderBox.style.display = "none";
+      var content = document.getElementsByClassName("content");
+      for (var i = 0; i < content.length; i++) {
+        content[i].style.visibility = "visible";
+        content[i].style.animation = "fade-in 1s ease-in-out";
+      }
+    }, 1250);
+  } else {
+    var loaderBox = document.getElementById("loaderBox");
+    loaderBox.style.opacity = "0";
+    loaderBox.style.display = "none";
+    var content = document.getElementsByClassName("content");
+    for (var i = 0; i < content.length; i++) {
+      content[i].style.visibility = "visible";
+      content[i].style.animation = "fade-in 1s ease-in-out";
+    }
   }
 });
 </script>
