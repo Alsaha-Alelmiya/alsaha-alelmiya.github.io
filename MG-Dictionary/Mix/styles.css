@@ -170,19 +170,18 @@ z-index: 1005;
 }
 
 .loader {
-  font-weight: bold;
   font-family: faseh-bold;
   display: inline-grid;
-  font-size: 30px;
-height:40px;
+  font-size: 22pt;
+height:30pt;
 position: relative;
-top:-10px;
+top:-7.5pt;
 }
 .loader:before,
 .loader:after {
   content:"جارٍ التحميل . . .";
   grid-area: 1/1;
-  -webkit-mask-size: 100% 5px,100% 100%;
+  -webkit-mask-size: 100% 3.5pt,100% 100%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-composite: xor;
           mask-composite: exclude;
@@ -202,15 +201,15 @@ top:-10px;
 }
 
 @keyframes l35-1{
-  0%   {-webkit-mask-position:0 20px,0 0}
-  20%  {-webkit-mask-position:0 8px ,0 0}
+  0%   {-webkit-mask-position:0 15,0 0}
+  20%  {-webkit-mask-position:0 6pt ,0 0}
   40%  {-webkit-mask-position:0 100%,0 0}
-  60%  {-webkit-mask-position:0 3px ,0 0}
-  80%  {-webkit-mask-position:0 15px,0 0}
+  60%  {-webkit-mask-position:0 2.25pt ,0 0}
+  80%  {-webkit-mask-position:0 11.25pt,0 0}
   100% {-webkit-mask-position:0 0   ,0 0}
 }
 @keyframes l35-2{
-  100% {transform:translate(0.1px)} 
+  100% {transform:translate(0.075pt)} 
 } 
 
 /* ----- header ----- */

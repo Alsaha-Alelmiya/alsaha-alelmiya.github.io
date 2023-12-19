@@ -65,46 +65,11 @@ display: flex;
 flex-direction:column;
 min-height:100vh;
 position: relative;
-animation:bgcolor-change 10s infinite;
 background-color:white;
 }
 ::selection{
 background-color:#0097B2;
 color:#f3eced;
-}
-@keyframes bgcolor-change{
-0%{
-background-color: white;
-}
-25%{
-background-color: #f5f5f5;
-}
-50%{
-background-color: #f3eced;
-}
-75%{
-background-color: #eaeaea;
-}
-100%{
-background-color: white;
-}
-}
-@keyframes bordercolor-change{
-0%{
-border-color: white;
-}
-25%{
-border-color: #f5f5f5;
-}
-50%{
-border-color: #f3eced;
-}
-75%{
-border-color: #eaeaea;
-}
-100%{
-border-color: white;
-}
 }
 @keyframes fade-in{
 from{
@@ -129,7 +94,6 @@ background-repeat:no-repeat;
 border: 6px double white;
 border-radius:10px 600px;
 height:180px;
-animation:bordercolor-change 10s infinite;
 }
 .thoughts-div{
 display:flex;
@@ -141,7 +105,7 @@ display:block;
 background-color:#a3acc4;
 padding:20px 40px;
 border-radius:30px 0px 30px 30px;
-min-width:20%;
+min-width:30%;
 max-width:60%;
 margin:15px;
 line-height:1.8;
@@ -209,6 +173,7 @@ background-color:#707991ef;
 box-shadow:0 0 4.5px #a3acc4;
 color:#f3eced;
 align-self:flex-end;
+min-width:fit-content;
 }
 .thought-right{
 border-radius:30px 5px 30px 30px;
@@ -303,7 +268,7 @@ align-items: center;
 opacity: 1;
 transition: opacity 0.5s ease-out;
 z-index: 1005;
-animation:fade-out 22s infinite;
+animation:fade-out 26s infinite;
 }
 
 .loader {
@@ -407,7 +372,7 @@ window.addEventListener("load", function() {
         content[i].style.visibility = "visible";
         content[i].style.animation = "fade-in 1s ease-in-out";
       }
-    }, 1250);
+    }, 3500);
   } else {
     var loaderBox = document.getElementById("loaderBox");
     loaderBox.style.opacity = "0";

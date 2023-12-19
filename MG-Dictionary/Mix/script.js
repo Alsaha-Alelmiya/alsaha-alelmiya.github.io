@@ -37,11 +37,17 @@ window.addEventListener("load", function() {
 });
 
 function openMenu(){
+document.getElementById("menu-box").style.display = "block";
+setTimeout(function(){
 document.getElementById("menu-box").style.translate = "0";
+}, 150);
 }
 
 function closeMenu() {
 document.getElementById("menu-box").style.translate = "100% -100%";
+setTimeout(function(){
+document.getElementById("menu-box").style.display = "none";
+}, 150);
 }
    
 var terms = [
@@ -119,7 +125,7 @@ if (vocabularyBuildingBtn) {
 }
 
 if (window.innerWidth < 450 || window.matchMedia('print').matches) {
-  var styleSheets = ['styles-for-units.css', 'styles-for-grades-pages.css', 'styles.css'];
+  var styleSheets = ['styles-for-units.css', 'styles-for-grades-pages.css', 'styles.css', 'styles-for-home-page.css'];
   var rules = [];
 
   // Find the target stylesheets
