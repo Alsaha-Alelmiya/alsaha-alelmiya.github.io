@@ -37,17 +37,11 @@ window.addEventListener("load", function() {
 });
 
 function openMenu(){
-document.getElementById("menu-box").style.display = "block";
-setTimeout(function(){
 document.getElementById("menu-box").style.translate = "0";
-}, 150);
 }
 
 function closeMenu() {
 document.getElementById("menu-box").style.translate = "100% -100%";
-setTimeout(function(){
-document.getElementById("menu-box").style.display = "none";
-}, 150);
 }
    
 var terms = [
