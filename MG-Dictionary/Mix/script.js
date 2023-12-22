@@ -118,6 +118,28 @@ if (vocabularyBuildingBtn) {
   });
 }
 
+var examples = document.querySelectorAll('.examples');
+var showExamples = document.querySelector('.showExamples');
+var isExamplesShown = false;
+
+showExamples.addEventListener('click', function () {
+  if (isExamplesShown === false) {
+    for (var i = 0; i < examples.length; i++) {
+      examples[i].style.display = "block";
+examples[i].style.animation = "fade-in-for-examples 0.5s ease-in-out";
+    }
+    isExamplesShown = true;
+  } else {
+    for (var i = 0; i < examples.length; i++) {
+examples[i].style.animation = "fade-out-for-examples 0.3s ease-in-out";
+setTimeout(function(index){
+      examples[index].style.display = "none";
+}, 300, i);
+    }
+    isExamplesShown = false;
+  }
+});
+
 if (window.innerWidth < 450 || window.matchMedia('print').matches) {
   var styleSheets = ['styles-for-units.css', 'styles-for-grades-pages.css', 'styles.css', 'styles-for-home-page.css'];
   var rules = [];

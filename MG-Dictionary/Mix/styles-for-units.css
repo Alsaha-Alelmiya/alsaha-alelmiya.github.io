@@ -171,7 +171,7 @@ font-weight:900;
 padding-left:5px;
 }
 
-.identify-v-e-btns{
+.identify-v-e-btns, .showExamples{
 font-size: 13.5px !important;
 }
 
@@ -188,6 +188,11 @@ color:#C02228;
 .after-reading-btn::before{
 content: '❐ ';
 color:#44B869;
+}
+
+.showExamples::before{
+content: '❒ ';
+color:currentColor;
 }
 
 @keyframes slide-down{
@@ -211,6 +216,24 @@ opacity: 1;
 to{
 transform: translateY(-30px);
 opacity: 0;
+}
+}
+
+@keyframes fade-in-for-examples{
+from{
+opacity:0;
+}
+to{
+opacity:0.5;
+}
+}
+
+@keyframes fade-out-for-examples{
+from{
+opacity:0.5;
+}
+to{
+opacity:0;
 }
 }
 
@@ -277,6 +300,12 @@ border-radius:20px 170px;
 float:center;
 text-shadow:var(--text-shadow-fbg);
 font-weight: normal;
+}
+
+.examples{
+font-size:10px;
+opacity:0.5;
+display: none;
 }
 
 .speaker-btn{
