@@ -52,3 +52,46 @@ willDo: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/U
 zoologistJob: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit5/Zoologist-job.mp3')
 }
 ];
+
+var unit6 = [
+{
+aHassle: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/A-hassle-rt.mp3'),
+aNoBrainer: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/A-no-brainer-rt.mp3'),
+aPieceOfCake: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/A-piece-of-cake-rt.mp3'),
+access: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Access-v.mp3'),
+accumulate: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Accumulate-v.mp3'),
+bagful: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Bagful-n.mp3'),
+bold: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Bold-adj.mp3'),
+chuck: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Chuck-rt.mp3'),
+committed: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Committed-adj.mp3'),
+conserve: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Conserve-v.mp3'),
+consumption: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Consumption-n.mp3'),
+efficiency: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Efficiency-n.mp3'),
+enormous: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Enormous-adj.mp3'),
+glossy: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Glossy-adj.mp3'),
+harsh: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Harsh-adj.mp3'),
+iGuess: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/I-guess-rt.mp3'),
+impact: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Impact-n.mp3'),
+lame: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Lame-rt.mp3'),
+landfill: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Landfill-n.mp3'),
+ms1: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Ms-1.mp3'),
+ms2: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Ms-2.mp3'),
+ms3: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Ms-3.mp3'),
+ms4: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Ms-4.mp3'),
+ms5: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Ms-5.mp3'),
+organic: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Organic-adj.mp3'),
+perspective: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Perspective-n.mp3'),
+pesticides: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Pesticides-n.mp3'),
+powerOutage: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Power-outage-n.mp3'),
+rely: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Rely-v.mp3'),
+reusable: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Reusable-adj.mp3'),
+sacrifice: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Sacrifice-n.mp3'),
+selfReliance: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Self-reliance-n.mp3'),
+source: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Source-n.mp3'),
+thermostat: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Thermostat-n.mp3'),
+utility: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Utility-n.mp3'),
+vacuum: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Vacuum-n.mp3'),
+waste: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Waste-n.mp3'),
+wrapper: new Audio('https://alsaha-alelmiya.github.io/MG-Dictionary/MG-2/voices/Unit6/Wrapper-n.mp3')
+}
+];
