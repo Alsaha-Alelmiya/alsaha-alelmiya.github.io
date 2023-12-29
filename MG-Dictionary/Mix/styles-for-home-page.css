@@ -81,7 +81,7 @@ top:-9px;
 display:grid;
 grid-template-columns:1fr 1fr;
 grid-gap:30px;
-margin:40px 25px;
+margin:25px 25px;
 }
 
 .btns{
@@ -93,17 +93,14 @@ background-color:var(--fg-color);
 border-radius:2px;
 color:var(--bg-color);
 box-shadow:1px 1px 5px gray;
+grid-column: 1/-1;
+padding:8px 5px;
 }
 
 .btns:hover{
 background-color:var(--bg-color);
 color:var(--fg-color);
 border-color:var(--fg-color);
-}
-
-.grade12{
-padding:10px 3px;
-grid-column: 1/-1;
 }
 
 .grades-btns-div{

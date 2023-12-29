@@ -122,6 +122,7 @@ var examples = document.querySelectorAll('.examples');
 var showExamples = document.querySelector('.showExamples');
 var isExamplesShown = false;
 
+if(document.querySelector('.menu-box .showExamples')){
 showExamples.addEventListener('click', function () {
   if (isExamplesShown === false) {
     for (var i = 0; i < examples.length; i++) {
@@ -139,6 +140,7 @@ setTimeout(function(index){
     isExamplesShown = false;
   }
 });
+}
 
 if (window.innerWidth < 450 || window.matchMedia('print').matches) {
   var styleSheets = ['styles-for-units.css', 'styles-for-grades-pages.css', 'styles.css', 'styles-for-home-page.css'];

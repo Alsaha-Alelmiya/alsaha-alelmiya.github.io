@@ -339,6 +339,11 @@ s{
 text-decoration-thickness:0.7px;
 }
 
+img{
+user-select:auto;
+pointer-events: auto;
+}
+
 /* ----- footer ----- */
 
 footer{
