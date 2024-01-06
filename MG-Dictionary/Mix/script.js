@@ -55,18 +55,22 @@ var isItVisible = [false, false, false];
 function toggleTerm(index) {
   if (isItVisible[index] == false) {
     for (let i = 0; i < terms[index].length; i++) {
-      terms[index][i].style.display = "block";
-      terms[index][i].style.animation = "slide-down 0.4s ease-in-out";
+terms[index][i].style.display = "block";
+      terms[index][i].style.height = "fit-content";
+      terms[index][i].style.animation = "slide-down 0.3s ease-in-out";
     }
     isItVisible[index] = true;
     document.querySelectorAll(".terms-btns")[index].classList.remove("have-caret");
     document.querySelectorAll(".terms-btns")[index].querySelector("i").style.display ="inline-block";
   } else {
     for (let i = 0; i < terms[index].length; i++) {
-      terms[index][i].style.animation = "slide-up 0.4s ease-in-out";
+      terms[index][i].style.animation = "slide-up 0.3s ease-in-out";
       setTimeout(function(){
+        terms[index][i].style.height = "0";
+setTimeout(function(){
         terms[index][i].style.display = "none";
-      }, 400);
+      }, 100);
+      }, 300);
     }
     isItVisible[index] = false;
     document.querySelectorAll(".terms-btns")[index].classList.add("have-caret");
@@ -174,4 +178,80 @@ if (window.innerWidth < 450 || window.matchMedia('print').matches) {
       }
     }
   }
+}
+
+// Get the elements by their class names
+const mTitles = document.getElementsByClassName("m-titles");
+const sTitles = document.getElementsByClassName("s-titles");
+const items = document.getElementsByClassName("items");
+const tables = document.getElementsByTagName("table");
+const th = document.getElementsByTagName("th");
+const td = document.getElementsByTagName("td");
+const icons = document.getElementsByClassName("icons");
+const arI = document.getElementsByClassName("ar-i");
+const arSt = document.getElementsByClassName("ar-st");
+const enI = document.getElementsByClassName("en-i");
+const enSt = document.getElementsByClassName("en-st");
+
+// Apply the converted styles using the style property
+for (let i = 0; i < mTitles.length; i++) {
+  mTitles[i].style.backgroundColor = "var(--dark-bg-color)";
+  mTitles[i].style.color = "var(--fg-color)";
+  mTitles[i].style.fontFamily = "ibm plex sans arabic";
+  mTitles[i].style.fontWeight = "500";
+  mTitles[i].style.border = "none";
+  mTitles[i].style.borderTop = "2px solid white";
+  mTitles[i].style.fontSize = "12px";
+}
+
+for (let i = 0; i < sTitles.length; i++) {
+  sTitles[i].style.backgroundColor = "var(--bg-color)";
+  sTitles[i].style.color = "var(--fg-color)";
+  sTitles[i].style.fontFamily = "markazi-text";
+  sTitles[i].style.borderTop = "2px solid white";
+  sTitles[i].style.fontSize = "15px";
+}
+
+for (let i = 0; i < items.length; i++) {
+  items[i].style.fontFamily = "katibeh";
+  items[i].style.backgroundColor = "var(--fg-color)";
+  items[i].style.color = "var(--bg-color)";
+  items[i].style.fontSize = "14.5px";
+}
+
+for (let i = 0; i < tables.length; i++) {
+  tables[i].style.margin = "auto";
+  tables[i].style.borderRadius = "30px 5px";
+  tables[i].style.border = "6px double white";
+  tables[i].style.width = "100%";
+}
+
+for (let i = 0; i < th.length; i++) {
+  th[i].style.borderCollapse = "collapse";
+  th[i].style.padding = "10px";
+}
+
+for (let i = 0; i < td.length; i++) {
+  td[i].style.borderCollapse = "collapse";
+  td[i].style.padding = "10px";
+}
+
+for (let i = 0; i < icons.length; i++) {
+  icons[i].style.fontFamily = "icons";
+}
+
+for (let i = 0; i < arI.length; i++) {
+  arI[i].style.borderRight = "2px white solid";
+}
+
+for (let i = 0; i < arSt.length; i++) {
+  arSt[i].style.borderRight = "2px white solid";
+}
+
+for (let i = 0; i < enI.length; i++) {
+  enI[i].style.borderLeft = "2px white solid";
+}
+
+for (let i = 0; i < enSt.length; i++) {
+  enSt[i].style.borderLeft = "2px white solid";
 }
