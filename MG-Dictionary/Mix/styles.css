@@ -51,11 +51,6 @@ padding: 0;
 display:none !important;
 }
 footer{
-height: fit-content !important;
-min-height:fit-content !important;
-background-image: var(--footer-bg) !important;
-}
-.footer-list, .footer-list li, .footer-list a{
 display: none !important;
 }
 .break{

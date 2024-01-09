@@ -180,7 +180,16 @@ if (window.innerWidth < 450 || window.matchMedia('print').matches) {
   }
 }
 
-// Get the elements by their class names
+
+function isIOSBrowser() {
+  const userAgent = navigator.userAgent;
+  return /iPad|iPhone|iPod/.test(userAgent) && !window.MSStream;
+}
+
+if (isIOSBrowser()) {
+  console.log("This code is running on an iOS browser.");
+} 
+else{
 const mTitles = document.getElementsByClassName("m-titles");
 const sTitles = document.getElementsByClassName("s-titles");
 const items = document.getElementsByClassName("items");
@@ -254,4 +263,5 @@ for (let i = 0; i < enI.length; i++) {
 
 for (let i = 0; i < enSt.length; i++) {
   enSt[i].style.borderLeft = "2px white solid";
+}
 }
