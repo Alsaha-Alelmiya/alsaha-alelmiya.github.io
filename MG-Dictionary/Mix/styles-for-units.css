@@ -9,12 +9,13 @@ background-size: 100vw;
 h1.index{
 font-family:reem kufi;
 font-size:11px;
+width:55%;
 text-align:center;
 color:var(--bg-color);
 z-index:1;
-position:relative;
-top:28.5px;
-padding-right:20px;
+position:relative; 
+top:25px;
+padding-right:50px;
 border-radius:20px 170px;
 float:center;
 text-shadow:var(--text-shadow-fbg);

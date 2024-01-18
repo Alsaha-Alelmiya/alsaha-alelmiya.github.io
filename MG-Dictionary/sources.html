@@ -92,7 +92,7 @@ margin:auto;
 border:6px double white;
 width:100%;
 }
-.m-title{
+.main-title{
 background-color:#607078;
 }
 td{
@@ -102,7 +102,7 @@ font-family:faseh-bold;
 color:#f3eced;
 border-bottom:2px solid white;
 }
-.items{
+.objects{
 background-color:#f3eced;
 color:#80929a;
 border:2px solid white;
@@ -119,6 +119,25 @@ button:hover{
 color:#80929a;
 cursor:pointer;
 }
+.back-to-home{
+font-size:18px;
+text-align:right;
+background-color:#607078;
+color:#f3eced;
+padding:10px;
+opacity:0.5;
+border-radius:8px;
+position:fixed;
+bottom:15px;
+right:10px;
+font-family:faseh-bold;
+border:4px double #f3eced;
+}
+.back-to-home:hover{
+opacity:1;
+cursor:pointer;
+color:#f3eced;
+}
 </style>
 </head>
 <body>
@@ -130,135 +149,136 @@ cursor:pointer;
 </div>
 <div class="content"><table>
 <tr>
-<td colspan="2" class="m-title">الخطوط</td>
+<td colspan="2" class="main-title">الخطوط</td>
 </tr>
 <tr>
 <td>الخط</td>
 <td>مثال</td>
 </tr>
 <tr>
-<td class="items">Reem Kufi</td>
-<td class="items" style="font-family:reem kufi; font-size:14px;">Reem Kufi - ريم كوفي</td>
+<td class="objects">Reem Kufi</td>
+<td class="objects" style="font-family:reem kufi; font-size:14px;">Reem Kufi - ريم كوفي</td>
 </tr>
 <tr>
-<td class="items">Markazi Text</td>
-<td class="items" style="font-family:markazi-text;">Markazi Text - مركزي</td>
+<td class="objects">Markazi Text</td>
+<td class="objects" style="font-family:markazi-text;">Markazi Text - مركزي</td>
 </tr>
 <tr>
-<td class="items">Katibeh</td>
-<td class="items" style="font-family:katibeh;">Katibeh - كتيبة</td>
+<td class="objects">Katibeh</td>
+<td class="objects" style="font-family:katibeh;">Katibeh - كتيبة</td>
 </tr>
 <tr>
-<td class="items">IBM Plex Sans Arabic</td>
-<td class="items" style="font-family:ibm plex sans arabic; font-size:12px;">IBM Plex Sans Arabic - آي بي إم بليكس عربي</td>
+<td class="objects">IBM Plex Sans Arabic</td>
+<td class="objects" style="font-family:ibm plex sans arabic; font-size:12px;">IBM Plex Sans Arabic - آي بي إم بليكس عربي</td>
 </tr>
 <tr>
-<td class="items">Faseh</td>
-<td class="items" style="font-family:faseh;">Faseh - فصيح</td>
+<td class="objects">Faseh</td>
+<td class="objects" style="font-family:faseh;">Faseh - فصيح</td>
 </tr>
 <tr>
-<td class="items">Faseh Bold</td>
-<td class="items" style="font-family:faseh-bold;">Faseh Bold - فصيح بنط عريض</td>
+<td class="objects">Faseh Bold</td>
+<td class="objects" style="font-family:faseh-bold;">Faseh Bold - فصيح بنط عريض</td>
 </tr>
 <tr>
-<td class="items">خط الأيقونات
+<td class="objects">خط الأيقونات
 <br>
 <button onclick="document.location.href='Mix/icons.ttf'" download="خط الأيقونات">
 <i class="fas fa fa-download"></i>
 انقر لتحميل الخط
 </button>
 </td>
-<td class="items" style="font-family:icons;">x - X - ㆔ - 🔊
+<td class="objects" style="font-family:icons;">x - X - ㆔ - 🔊
 <p style="font-size:12px; padding-top:6px; font-family:faseh; color:#80929aaa;">إذا أردت أن تستعمل أحد هذه الأيقونات؛ انسخها من هنا واستعملها مع الخط.</p>
 </td>
 </tr>
 </table>
 <table>
 <tr>
-<td colspan="2" class="m-title">الألوان</td>
+<td colspan="2" class="main-title">الألوان</td>
 </tr>
 <tr>
 <td>اللون</td>
 <td>مثال</td>
 </tr>
 <tr>
-<td class="items">#9FB4AD</td>
-<td class="items" style="color:#9FB4AD;">مثال على هذا اللون</td>
+<td class="objects">#9FB4AD</td>
+<td class="objects" style="color:#9FB4AD;">مثال على هذا اللون</td>
 </tr>
 <tr>
-<td class="items">#7D928B</td>
-<td class="items" style="color:#7d928b;">مثال على هذا اللون</td>
+<td class="objects">#7D928B</td>
+<td class="objects" style="color:#7d928b;">مثال على هذا اللون</td>
 </tr>
 <tr>
-<td class="items">#4F93AA</td>
-<td class="items" style="color:#4F93AA;">مثال على هذا اللون</td>
+<td class="objects">#4F93AA</td>
+<td class="objects" style="color:#4F93AA;">مثال على هذا اللون</td>
 </tr>
 <tr>
-<td class="items">#2D7188</td>
-<td class="items" style="color:#2D7188;">مثال على هذا اللون</td>
+<td class="objects">#2D7188</td>
+<td class="objects" style="color:#2D7188;">مثال على هذا اللون</td>
 </tr>
 <tr>
-<td class="items" dir="ltr">#AA8F64</td>
-<td class="items" style="color:#AA8F64;">مثال على هذا اللون</td>
+<td class="objects" dir="ltr">#AA8F64</td>
+<td class="objects" style="color:#AA8F64;">مثال على هذا اللون</td>
 </tr>
 <tr>
-<td class="items" dir="ltr">#886D42</td>
-<td class="items" style="color:#886D42;">مثال على هذا اللون</td>
+<td class="objects" dir="ltr">#886D42</td>
+<td class="objects" style="color:#886D42;">مثال على هذا اللون</td>
 </tr>
 <tr>
-<td class="items">#80929A</td>
-<td class="items" style="color:#80929A;">مثال على هذا اللون</td>
+<td class="objects">#80929A</td>
+<td class="objects" style="color:#80929A;">مثال على هذا اللون</td>
 </tr>
 <tr>
-<td class="items">#607078</td>
-<td class="items" style="color:#607078;">مثال على هذا اللون</td>
+<td class="objects">#607078</td>
+<td class="objects" style="color:#607078;">مثال على هذا اللون</td>
 </tr>
 <tr>
-<td class="items" dir="ltr">#F3ECED</td>
-<td class="items" style="color:#F3ECED; text-shadow:0px 0px 1px #000, 0px 0px 1px #000, 0px 0px 1px #000;">مثال على هذا اللون</td>
-</tr>
-</table>
-<table>
-<tr>
-<td colspan="2" class="m-title">الترجمة</td>
-</tr>
-<tr>
-<td colspan="2" class="items">قاموس U-Dictionary</td>
-</tr>
-<tr>
-<td colspan="2" class="items">قاموس Reverso Context</td>
-</tr>
-<tr>
-<td colspan="2" class="items">قاموس Collins</td>
-</tr>
-<tr>
-<td colspan="2" class="items">ترجمة Google</td>
+<td class="objects" dir="ltr">#F3ECED</td>
+<td class="objects" style="color:#F3ECED; text-shadow:0px 0px 1px #000, 0px 0px 1px #000, 0px 0px 1px #000;">مثال على هذا اللون</td>
 </tr>
 </table>
 <table>
 <tr>
-<td colspan="2" class="m-title">الصوتيات</td>
+<td colspan="2" class="main-title">الترجمة</td>
 </tr>
 <tr>
-<td colspan="2" class="items">جميع الصوتيات من موقع elevenlabs.io بصوت Adam</td>
+<td colspan="2" class="objects">قاموس U-Dictionary</td>
+</tr>
+<tr>
+<td colspan="2" class="objects">قاموس Reverso Context</td>
+</tr>
+<tr>
+<td colspan="2" class="objects">قاموس Collins</td>
+</tr>
+<tr>
+<td colspan="2" class="objects">ترجمة Google</td>
 </tr>
 </table>
 <table>
 <tr>
-<td colspan="2" class="m-title">الخلفيات</td>
+<td colspan="2" class="main-title">الصوتيات</td>
 </tr>
 <tr>
-<td colspan="2" class="items">خلفية Sun Tornado من موقع svgbackgrounds.com</td>
+<td colspan="2" class="objects">جميع الصوتيات من موقع elevenlabs.io بصوت Adam</td>
 </tr>
 </table>
 <table>
 <tr>
-<td colspan="2" class="m-title">المكتبات</td>
+<td colspan="2" class="main-title">الخلفيات</td>
 </tr>
 <tr>
-<td colspan="2" class="items">مكتبة FontAwesome الإصدار السادس</td>
+<td colspan="2" class="objects">خلفية Sun Tornado من موقع svgbackgrounds.com</td>
+</tr>
+</table>
+<table>
+<tr>
+<td colspan="2" class="main-title">المكتبات</td>
+</tr>
+<tr>
+<td colspan="2" class="objects">مكتبة FontAwesome الإصدار السادس</td>
 </tr>
 </table></div>
+<button class="back-to-home" onclick="document.location.href='index.html'"><i class="fa fas fa-home"></i> &nbsp;عودة للصفحة الرئيسة</button>
 <script src="Mix/script.js"></script>
 </body>
 </html>
